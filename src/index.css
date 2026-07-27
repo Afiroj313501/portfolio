@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-bg text-text font-body antialiased;
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(59, 130, 246, 0.10), transparent 40%),
+    radial-gradient(circle at 85% 0%, rgba(6, 182, 212, 0.08), transparent 45%);
+}
+
+::selection {
+  background: #3B82F6;
+  color: #F8FAFC;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0F172A;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 999px;
+  border: 2px solid #0F172A;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3B82F6;
+}
+
+:focus-visible {
+  outline: 2px solid #06B6D4;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.section-eyebrow {
+  @apply font-mono text-xs tracking-[0.25em] uppercase text-accent;
+}
+
+.section-heading {
+  @apply font-display text-3xl sm:text-4xl font-semibold text-text mt-2;
+}
+
+.card-surface {
+  @apply bg-card/70 border border-white/5 backdrop-blur-sm rounded-2xl;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
