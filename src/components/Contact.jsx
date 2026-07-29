@@ -9,8 +9,8 @@ const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
 const contactInfo = [
   { icon: FaEnvelope, label: 'Email', value: 'abdullahfiroj860@gmail.com', href: 'mailto:abdullahfiroj860@gmail.com' },
-  { icon: FaGithub, label: 'GitHub', value: 'github.com/abdullah-firoj', href: 'https://github.com/abdullah-firoj' },
-  { icon: FaLinkedin, label: 'LinkedIn', value: 'linkedin.com/in/abdullah-firoj', href: 'https://linkedin.com/in/abdullah-firoj' },
+  { icon: FaGithub, label: 'GitHub', value: 'Github', href: 'https://github.com/Afiroj313501' },
+  { icon: FaLinkedin, label: 'LinkedIn', value: 'LinkedIn', href: 'https://www.linkedin.com/in/abdullah-firoj-900697375/' },
   { icon: FaMapMarkerAlt, label: 'Location', value: 'Dhaka, Bangladesh', href: null },
 ]
 
